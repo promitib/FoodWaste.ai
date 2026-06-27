@@ -1,0 +1,31 @@
+### Health Check
+GET http://localhost:8080/api
+
+###
+
+### Forecast - predict 7 days of food surplus
+POST http://localhost:8080/api/forecast
+Content-Type: application/json
+
+{
+  "historicalSurplus": [45.2, 50.1, 38.7, 60.0, 55.3, 42.1, 48.9, 52.3, 47.6, 61.2, 53.8, 44.5, 49.7, 58.1],
+  "daysToPredict": 7
+}
+
+###
+
+### Route Optimisation - 3 locations, 2 vehicles
+POST http://localhost:8080/api/optimize-route
+Content-Type: application/json
+
+{
+  "locations": [
+    {"name": "Food Bank Mumbai Central", "lat": 18.9690, "lng": 72.8205},
+    {"name": "Restaurant Bandra",        "lat": 19.0596, "lng": 72.8295},
+    {"name": "Shelter Dharavi",          "lat": 19.0176, "lng": 72.8562},
+    {"name": "Cafe Andheri",             "lat": 19.1136, "lng": 72.8697},
+    {"name": "NGO Colaba",               "lat": 18.9067, "lng": 72.8147}
+  ],
+  "vehicleCount": 2,
+  "optimizationStrategy": "nearest_neighbour"
+}
