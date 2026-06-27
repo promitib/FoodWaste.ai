@@ -22,7 +22,6 @@ routes without expensive enterprise software.
 
 ## Tech Stack
 
-| Layer       | Technology 
 | Backend     | Java 17, Spring Boot 3 
 | Database    | PostgreSQL (JPA/Hibernate) 
 | Algorithms  | Holt-Winters (forecasting), Nearest Neighbour VRP (routing) 
@@ -33,7 +32,6 @@ routes without expensive enterprise software.
 
 ## API Endpoints
 
-| Method | Endpoint        | Description 
 | GET    | `/api/health`   | Health check 
 | POST   | `/api/forecast` | Predict surplus food quantity 
 | POST   | `/api/route`    | Optimize redistribution route 
