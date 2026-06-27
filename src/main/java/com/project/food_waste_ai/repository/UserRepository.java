@@ -3,6 +3,7 @@ package com.project.food_waste_ai.repository;
 import com.project.food_waste_ai.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
 import java.util.Optional;
 
 @Repository
